@@ -22,7 +22,7 @@ list_of_files = [
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",
     f"{project_name}/tools/__init__.py",
-    "research/trials.ipynb", 
+    "notebook/experiment.ipynb", 
     "main.py",
     "agent.py",
     "streamlit_app.py",
