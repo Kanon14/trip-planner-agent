@@ -13,7 +13,12 @@ class GraphBuilder():
         self.model_loader = ModelLoader(model_provider=model_provider)
         self.llm = self.model_loader.load_llm()
         
-        self.tools = [] 
+        self.tools = [] # Tool list
+        
+        self.weather_tools = WeatherInfoTool()
+        self.place_search_tools = PlaceSearchTool()
+        self.calculator_tools = CalculatorTool()
+        self.currency_converter_tools = CurrencyConverterTool()
         
         self.tools.extend([* self.weather_tools.weather_tool_list, 
                            * self.place_search_tools.place_search_tool_list,

@@ -8,6 +8,7 @@ from langchain_openai import ChatOpenAI
 from tripPlanner.logger import logging
 # from tripPlanner.exception import AppException
 
+load_dotenv()
 
 class ConfigLoader:
     def __init__(self):
