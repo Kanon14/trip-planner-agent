@@ -6,6 +6,3 @@ def load_config(config_path: str = "tripPlanner/config/config.yaml") -> dict:
         config = yaml.safe_load(file)
         print(config)
     return config
-
-
-load_config()
