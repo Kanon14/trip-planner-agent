@@ -1,5 +1,4 @@
 import yaml
-import os
 
 def load_config(config_path: str = "tripPlanner/config/config.yaml") -> dict:
     with open(config_path, "r") as file:
